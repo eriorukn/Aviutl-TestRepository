@@ -18,11 +18,11 @@ sp=obj.track2
 if(obj.time>ta) then
 	atai=sp*(obj.time-ta)
 	
-		if(atai<pow) then
-			obj.effect("‚Ú‚©‚µ","”ÍˆÍ",atai)
-		else
-			obj.effect("‚Ú‚©‚µ","”ÍˆÍ",pow)
-		end
+	if(atai<pow) then
+		obj.effect("‚Ú‚©‚µ","”ÍˆÍ",atai)
+	else
+		obj.effect("‚Ú‚©‚µ","”ÍˆÍ",pow)
+	end
 end
 
 @test
