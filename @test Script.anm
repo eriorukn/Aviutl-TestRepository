@@ -24,3 +24,5 @@ if(obj.time>ta) then
 			obj.effect("‚Ú‚©‚µ","”ÍˆÍ",pow)
 		end
 end
+
+@test
