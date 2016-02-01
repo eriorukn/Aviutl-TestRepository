@@ -1,0 +1,26 @@
+@Y軸直線移動
+--track0:速度[s],-50,50,0,1
+ta=obj.track0
+obj.oy = obj.oy + obj.time*ta
+
+@X軸直線移動
+--track0:速度[s],-50,50,0,1
+ta=obj.track0
+obj.ox = obj.oy + obj.time*ta
+
+@時間指定ぼかし
+--track0:開始時間[s],0,500,0,0.1
+--track1:最大強さ[s],0,500,0,1
+--track2:変化速度[s],0,100,1,0.01
+ta=obj.track0
+pow=obj.track1
+sp=obj.track2
+if(obj.time>ta) then
+	atai=sp*(obj.time-ta)
+	
+		if(atai<pow) then
+			obj.effect("ぼかし","範囲",atai)
+		else
+			obj.effect("ぼかし","範囲",pow)
+		end
+end
