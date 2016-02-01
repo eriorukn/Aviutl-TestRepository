@@ -1,0 +1,1 @@
+obj.ox = obj.oy + obj.time*25
